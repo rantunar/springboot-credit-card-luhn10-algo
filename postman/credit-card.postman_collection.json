@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "9badc4a1-8fbf-4ba5-ae58-e0bb99bc809d",
+		"name": "credit-card",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "credit-card-add",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Bob\",\r\n    \"cardNum\": \"79927398713\",\r\n    \"balance\": 0,\r\n    \"cardLimit\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/credit-card/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"credit-card",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "credit-card-get-all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/credit-card/get-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"credit-card",
+						"get-all"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
